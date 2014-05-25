@@ -1,0 +1,16 @@
+{
+    "contents" : "run_analysis\n============\n\nContains code and files for analysis of smartphone sensor readings.\n",
+    "created" : 1401039822356.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "982874799",
+    "id" : "D9DFFE75",
+    "lastKnownWriteTime" : 1401034536,
+    "path" : "~/run_analysis/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "markdown"
+}
