@@ -30,7 +30,7 @@ Facilitate analysis of sensor data taken from smart phones:
 3. 'listOfVariables.csv': List of 70 key features.
 
 ##Feature (column) Selection Criteria
-Reading from the article, objective is to determine what activity is being performed across subjects. That is the "y" or independent factor variable activityLabel (also ActivityName). For this six activity model, I have selected 70 variables according to the following criteria: 
+Reading from the article, objective is to determine what activity is being performed across subjects. That is the "y" or dependent factor variable activityLabel (also ActivityName). For this six activity model, I have selected 70 variables according to the following criteria: 
 
 Time domain (“t”) vs. Fourier (“f”) means and std devs:
 Time-based data is raw movement data plotted over time. Fourier transformation seeks to isolate periodic, wave-like, oscillations in the data using trigonometric sub-functions (sines, cosines, etc). Given the repetitive nature of movements in the activities to be predicted, I believe Fourier will be more predictive. Therefore, where Time and Fourier options existed, I chose Fourier. Three Time variables don’t have Fourier Transforms (GravityAcc, GravityAccMag and BodyGyroJerk). I included these means and std devs.
