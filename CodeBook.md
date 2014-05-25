@@ -2,7 +2,7 @@ Run_analysis Code Book
 ========================================================
 
 ##Study Design
-Data Collection: Data was collected from the UCI.edu sight. That data split smartphone sensor readings across multiple files including test and training files as well as subject, feature and activity files. 
+Data Collection: Data was collected from the UCI.edu site. That data split smart phone sensor readings across multiple files including test and training files as well as subject, feature and activity files. 
 
 Reading from the article, objective is to determine what activity is being performed across subjects. That is the "y" or independent factor variable activityLabel (also ActivityName). For this six activity model, I have selected 70 variables according to the following criteria: 
 
