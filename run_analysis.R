@@ -9,18 +9,14 @@
 ## Load required libraries.
 library(plyr)
 
-## If data directory exists, change to that directory.
-## Else, create data directory, download and unzip raw data files.
-if(file.exists("./data")) {
-     setwd("./data")
-} else {
-     dir.create("./data")
+## If unzipped UCI HAR Dataset not present download and unzip raw data files.
+if(!file.exists("./UCI HAR Dataset")) {
      fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-     download.file(fileUrl,destfile="./data/zipfile.zip",method="curl")
-     setwd("./data")
+     download.file(fileUrl,destfile="zipfile.zip",method="curl")
      unzip("zipfile.zip", files = NULL, list = FALSE, overwrite = TRUE,
            junkpaths = FALSE, exdir = ".", unzip = "internal",
            setTimes = FALSE)
+     rm(fileUrl)
 }
 
 ## Read raw data files into memory for processing.
@@ -98,4 +94,3 @@ write.csv(listOfVariables,"listOfVariables.csv")
 ## Remove working files.
 rm(tmp,tmpAct,tmpActSubj,activityLabels,listOfVariables)
 rm(master,output,i,j,k,labelNum,outputCtr,subjectNum)
-setwd("../")
