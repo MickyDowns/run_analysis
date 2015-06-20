@@ -19,45 +19,84 @@ Jerk readings:
 Jerk signals indicate change in the direction of motion. Used in conjunction with means and std devs for continuous movements (Acc and Gyro measures), these will be important ways of discriminating between activities w/ different movement patterns. Therefore, I included Jerk mean and std devs.
 
 ##Code Book
-Three data files are created: 1. 'masterData.txt': Merged file containing all input data, 2. 'activitySubjectMeans.txt': Means for 70 key features by activity/subject, 3. 'listOfVariables.csv': List of 70 key features. 
+Three data files are created: 1. 'masterData.txt': Merged file containing all input data, 2. 'activitySubjectMeans.txt': Means for 39 key features by activity/subject, 3. 'listOfVariables.csv': List of key features. 
 
-The 70 features chosen are:
-1    activityLabel
-2	activityName
-3	activitySubject
-4	tGravityAccmeanX
-5	tGravityAccmeanY
-6	tGravityAccmeanZ
-7	tGravityAccstdX
-8	tGravityAccstdY
-9	tGravityAccstdZ
-10	tGravityAccMagmean
-11	tGravityAccMagstd
-12	tBodyGyroJerkMagmean
-13	tBodyGyroJerkMagstd
-14	fBodyAccmeanX
-15	fBodyAccmeanY
-16	fBodyAccmeanZ
-17	fBodyAccstdX
-18	fBodyAccstdY
-19	fBodyAccstdZ
-20	fBodyAccJerkmeanX
-21	fBodyAccJerkmeanY
-22	fBodyAccJerkmeanZ
-23	fBodyAccJerkstdX
-24	fBodyAccJerkstdY
-25	fBodyAccJerkstdZ
-26	fBodyGyromeanX
-27	fBodyGyromeanY
-28	fBodyGyromeanZ
-29	fBodyGyrostdX
-30	fBodyGyrostdY
-31	fBodyGyrostdZ
-32	fBodyAccMagmean
-33	fBodyAccMagstd
-34	fBodyBodyAccJerkMagmean
-35	fBodyBodyAccJerkMagstd
-36	fBodyBodyGyroMagmean
-37	fBodyBodyGyroMagstd
-38	fBodyBodyGyroJerkMagmean
-39	fBodyBodyGyroJerkMagstd
+Key features chosen are:
+
+1.    activityLabel
+
+2.	activityName
+
+3.	activitySubject
+
+4.	tGravityAccmeanX
+
+5.	tGravityAccmeanY
+
+6.	tGravityAccmeanZ
+
+7.	tGravityAccstdX
+
+8.	tGravityAccstdY
+
+9.	tGravityAccstdZ
+
+10.	tGravityAccMagmean
+
+11.	tGravityAccMagstd
+
+12.	tBodyGyroJerkMagmean
+
+13.	tBodyGyroJerkMagstd
+
+14.	fBodyAccmeanX
+
+15.	fBodyAccmeanY
+
+16.	fBodyAccmeanZ
+
+17.	fBodyAccstdX
+
+18.	fBodyAccstdY
+
+19.	fBodyAccstdZ
+
+20.	fBodyAccJerkmeanX
+
+21.	fBodyAccJerkmeanY
+
+22.	fBodyAccJerkmeanZ
+
+23.	fBodyAccJerkstdX
+
+24.	fBodyAccJerkstdY
+
+25.	fBodyAccJerkstdZ
+
+26.	fBodyGyromeanX
+
+27.	fBodyGyromeanY
+
+28.	fBodyGyromeanZ
+
+29.	fBodyGyrostdX
+
+30.	fBodyGyrostdY
+
+31.	fBodyGyrostdZ
+
+32.	fBodyAccMagmean
+
+33.	fBodyAccMagstd
+
+34.	fBodyBodyAccJerkMagmean
+
+35.	fBodyBodyAccJerkMagstd
+
+36.	fBodyBodyGyroMagmean
+
+37.	fBodyBodyGyroMagstd
+
+38.	fBodyBodyGyroJerkMagmean
+
+39.	fBodyBodyGyroJerkMagstd

@@ -1,9 +1,7 @@
-run_analysis
+Getting & Cleaning Data: run_analysis
 ============
 ##Summary: Collect, reformat and summarize smart phone sensor data.
-Course: Getting & Cleaning Data.
-From: Johns Hopkins via Coursera.
-Student: Micky Downs.
+Author: Micky Downs
 
 ##Abstract:
 Facilitate analysis of sensor data taken from smart phones:

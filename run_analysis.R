@@ -1,4 +1,4 @@
-## Script cleans sensor data from Galaxy S device for analysis.
+## This R script cleans sensor data from a Galaxy S device for analysis. It:
 ## 1. Merges the training and test sets to create "master" data set.
 ## 2. Cleans all column names, reformatting several.
 ## 3. Decodes activity label by showing the corresponding activity name.
@@ -9,7 +9,7 @@
 ## Load required libraries.
 library(plyr)
 
-## If unzipped UCI HAR Dataset not present download and unzip raw data files.
+## If unzipped UCI HAR Dataset not present, download and unzip raw data.
 if(!file.exists("./UCI HAR Dataset")) {
      fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
      download.file(fileUrl,destfile="zipfile.zip",method="curl")
@@ -19,7 +19,7 @@ if(!file.exists("./UCI HAR Dataset")) {
      rm(fileUrl)
 }
 
-## Read raw data files into memory for processing.
+## Read raw data files for processing.
 trainSubj<-read.table("./UCI HAR Dataset/train/subject_train.txt",header=FALSE)
 trainY<-read.table("./UCI HAR Dataset/train/y_train.txt",header=FALSE)
 trainX<-read.table("./UCI HAR Dataset/train/X_train.txt",header=FALSE)
