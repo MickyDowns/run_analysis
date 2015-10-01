@@ -1,4 +1,4 @@
-Getting & Cleaning Data: run_analysis
+Analysis of Smart Device Sensor Output
 ============
 ##Summary: Collect, reformat and summarize smart phone sensor data.
 Author: Micky Downs
